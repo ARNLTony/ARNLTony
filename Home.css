@@ -637,4 +637,10 @@
 .u-section-5 .u-icon-1 {
   color: rgb(85, 172, 238) !important;
   height: 100%;
+}.u-section-6 .u-sheet-1 {
+  min-height: 400px;
+}
+
+.u-section-6 .u-custom-html-1 {
+  margin-bottom: 60px;
 }
