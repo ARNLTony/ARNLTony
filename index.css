@@ -15,7 +15,7 @@
   position: fixed;
   align-items: center;
   justify-content: center;
-  background-color: var(--dl-color-scheme-white);
+  background-color: #458df1;
 }
 .home-max-width {
   width: 100%;
@@ -80,6 +80,7 @@
   color: var(--dl-color-scheme-darkblue);
   cursor: pointer;
   height: auto;
+  z-index: 100;
   font-size: 20px;
   font-style: normal;
   transition: 0.3s;
@@ -107,13 +108,12 @@
 .home-argentina {
   height: 1246px;
   position: relative;
-  padding-top: 128px;
+  padding-top: 175px;
   padding-bottom: var(--dl-space-space-unit);
   background-color: #4085f3;
 }
 .home-max-width1 {
   height: 849px;
-  margin-top: 22px;
 }
 .home-heading-container {
   flex: 1;
@@ -126,6 +126,7 @@
   justify-content: center;
 }
 .home-text02 {
+  color: var(--dl-color-scheme-white);
   text-align: center;
   margin-bottom: var(--dl-space-space-halfunit);
   text-transform: uppercase;
@@ -185,6 +186,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-color: var(--dl-color-scheme-darkblue);
+  border-style: inset;
+  border-width: 6px;
 }
 .home-text09 {
   align-self: center;
@@ -198,15 +202,15 @@
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .home-link2 {
-  color: #f3f7f6;
+  color: var(--dl-color-scheme-white);
   border-width: 0px;
   text-decoration: none;
-  background-color: #1c3de4;
+  background-color: rgb(28, 61, 228);
 }
 .home-gallery-card1 {
   width: 100%;
   display: flex;
-  opacity: 0.3;
+  opacity: 1;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -215,6 +219,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-color: var(--dl-color-scheme-darkblue);
+  border-style: inset;
+  border-width: 6px;
 }
 .home-text11 {
   align-self: center;
@@ -223,12 +230,15 @@
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .home-text12 {
-  color: rgb(89, 89, 89);
+  color: var(--dl-color-scheme-black);
   align-self: center;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-button {
+.home-link3 {
+  color: var(--dl-color-scheme-white);
   border-width: 1px;
+  text-decoration: none;
+  background-color: rgb(28, 61, 228);
 }
 .home-gallery-card2 {
   width: 100%;
@@ -254,7 +264,7 @@
   align-self: center;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-button1 {
+.home-button {
   border-width: 1px;
 }
 .home-carpi {
@@ -337,6 +347,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-color: var(--dl-color-scheme-darkblue);
+  border-style: inset;
+  border-width: 6px;
 }
 .home-text23 {
   align-self: center;
@@ -349,7 +362,7 @@
   align-self: center;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-link3 {
+.home-link4 {
   color: #f3f7f6;
   border-width: 0px;
   text-decoration: none;
@@ -379,7 +392,7 @@
   align-self: center;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-button2 {
+.home-button1 {
   border-width: 1px;
 }
 .home-gallery-card5 {
@@ -406,7 +419,7 @@
   align-self: center;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-button3 {
+.home-button2 {
   border-width: 1px;
 }
 .home-about {
@@ -435,6 +448,16 @@
   .home-nav {
     display: none;
   }
+  .home-nav1 {
+    display: flex;
+    animation-direction: row;
+  }
+  .home-link {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-argentina {
+    height: 1931px;
+  }
   .home-heading-container {
     max-width: 100%;
     margin-bottom: 42px;
@@ -452,6 +475,10 @@
   }
   .home-gallery1 {
     grid-template-columns: 1fr 1fr;
+  }
+  .home-carpi {
+    height: 1188px;
+    padding-top: 656px;
   }
   .home-heading-container1 {
     max-width: 100%;
@@ -480,6 +507,7 @@
 }
 @media(max-width: 767px) {
   .home-max-width {
+    display: flex;
     padding: var(--dl-space-space-unit);
   }
   .home-nav1 {
@@ -547,8 +575,23 @@
   }
 }
 @media(max-width: 479px) {
+  .home-nav1 {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .home-link {
+    margin-bottom: var(--dl-space-space-unit);
+  }
   .home-argentina {
-    height: 1416px;
+    height: 1598px;
+    padding-top: 257px;
+    padding-bottom: 241px;
+  }
+  .home-max-width1 {
+    height: 895px;
+    margin-top: 0px;
   }
   .home-text02 {
     width: 463px;
@@ -559,11 +602,15 @@
   .home-image {
     width: 441px;
   }
+  .home-container2 {
+    height: 939px;
+  }
   .home-gallery1 {
+    height: 650px;
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-twounits);
+    padding-bottom: 0px;
   }
   .home-image1 {
     height: 10rem;

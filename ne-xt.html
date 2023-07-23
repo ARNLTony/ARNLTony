@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NeXT - Bitcoin Stamps</title>
+    <meta
+      name="description"
+      content="Bitcoin Stamps
+"
+    />
+    <meta property="og:title" content="NeXT - Bitcoin Stamps" />
+    <meta property="og:description" content="Bitcoin Stamps" />
+    <meta
+      property="og:image"
+      content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/fa5c07f3-2ae4-43ea-a6bb-3fa2c6e60d08/10adfd51-55a2-4f32-811a-6b2452c8e44d?org_if_sml=1"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: DM Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.3;
+        color: var(--dl-color-scheme-darkblue);
+        background-color: var(--dl-color-scheme-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/collection-pixel-24x24.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      .services-card:hover > div{
+      background-color: #fff
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./ne-xt.css" rel="stylesheet" />
+
+      <div class="ne-xt-container">
+        <h1>NeXT Bitcoin STAMPS</h1>
+        <img
+          src="https://arnltony.github.io/images/2022-promo.jpg"
+          alt="image"
+          class="ne-xt-image"
+        />
+        <img
+          src="https://arnltony.github.io/images/1986-promo.jpg"
+          alt="image"
+          class="ne-xt-image1"
+        />
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://www.googletagmanager.com/gtag/js?id=5342366383"
+      async=""
+    ></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '5342366383');
+    </script>
+    <script type="text/javascript">
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','G-3ES3CD91LH');
+    </script>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    <script>
+      window.onload = () => {
+        const runAllScripts = () => {
+          initializeAllSliders();
+        };
+
+        const listenForUrlChanges = () => {
+          let url = location.href;
+          document.body.addEventListener(
+            "click",
+            () => {
+              requestAnimationFrame(() => {
+                if (url !== location.href) {
+                  runAllScripts();
+                  url = location.href;
+                }
+              });
+            },
+            true
+          );
+        };
+
+        const initializeAllSliders = () => {
+          const allSliders = document.querySelectorAll('[data-type="slider"]');
+          allSliders.forEach((slider) => {
+            initializeSlider(slider);
+          });
+        };
+
+        const initializeSlider = (slider) => {
+          const slides = slider.querySelectorAll('[data-type="slide"]');
+          const middle = Math.ceil(slides.length / 2);
+          let currentSlide = middle;
+
+          const nextSlideBtns = document.querySelectorAll(
+            '[data-action="nextSlide"]'
+          );
+          const previousSlideBtns = document.querySelectorAll(
+            '[data-action="previousSlide"]'
+          );
+
+          const changeSlide = (slideIndex, action) => {
+            currentSlide = slideIndex;
+
+            switch (action) {
+              case "next":
+                slideIndex === slides.length
+                  ? (currentSlide = 1)
+                  : currentSlide++;
+                break;
+              case "previous":
+                slideIndex === 1
+                  ? (currentSlide = slides.length)
+                  : currentSlide--;
+            }
+
+            const slide = slides[0];
+            if (!slide) {
+              console.error("No slides present");
+              return;
+            }
+            const style = window.getComputedStyle(slide);
+            slideWidth =
+              parseInt(style.width) +
+              parseInt(style.marginLeft) +
+              parseInt(style.marginRight);
+            const transformValue = -slideWidth * (currentSlide - middle);
+
+            slider.style.transform = `translateX(${transformValue}px)`;
+          };
+
+          previousSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "previous")
+            );
+          });
+
+          nextSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "next")
+            );
+          });
+        };
+
+        runAllScripts();
+      };
+    </script>
+  </body>
+</html>

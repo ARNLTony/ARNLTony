@@ -1,0 +1,16 @@
+.ne-xt-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.ne-xt-image {
+  width: 200px;
+  object-fit: cover;
+}
+.ne-xt-image1 {
+  width: 200px;
+  object-fit: cover;
+}
